@@ -3,59 +3,58 @@
 ## 📌 Project Title
 **Exposing the Truth: Fake News Detection Powered by NLP**
 
----
-
 ## 📖 Description
 
-This project aims to build an intelligent system that automatically detects whether a news article is **real** or **fake** using Natural Language Processing (NLP) and Machine Learning techniques. With the rise of digital misinformation, such a system helps combat the spread of fake news by analyzing article content and predicting its authenticity.
-
----
+This project builds an intelligent system to classify news articles as **real** or **fake** using NLP and Machine Learning techniques. It helps mitigate the spread of misinformation online.
 
 ## 🎯 Objectives
 
-- Preprocess and clean textual news data.
-- Extract features using TF-IDF vectorization.
-- Train a classification model to detect fake news.
-- Evaluate model performance using accuracy, precision, recall, and F1-score.
-- Provide a simple interface for users to test article authenticity.
-
----
+- Clean and preprocess text data.
+- Convert text into features using TF-IDF.
+- Train a classification model (Logistic Regression).
+- Evaluate model performance.
+- Allow user to input custom news for prediction.
 
 ## 📊 Dataset
 
-- **Source**: [Kaggle - Fake and Real News Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
-- **Features**:
-  - `title`: Headline of the article
-  - `text`: Full content of the article
-  - `label`: 0 = Fake, 1 = Real
-
----
+- **Source**: Kaggle - Fake and Real News Dataset
+- **Columns**: title, text, label (0 = Fake, 1 = Real)
 
 ## 🧪 Tech Stack
 
-- **Language**: Python 3.x  
-- **Libraries**:
-  - pandas, numpy, scikit-learn
-  - matplotlib, seaborn
-  - nltk, re (text preprocessing)
-
----
+- Python 3.x
+- pandas, numpy, scikit-learn, matplotlib, seaborn, nltk
 
 ## 🔁 Project Workflow
 
 1. Data Collection  
-2. Data Cleaning and Preprocessing  
-3. Text Vectorization using TF-IDF  
-4. Model Building (Logistic Regression)  
-5. Model Evaluation  
-6. User Input Testing  
-
----
+2. Preprocessing  
+3. TF-IDF Vectorization  
+4. Model Training  
+5. Evaluation  
+6. User Testing
 
 ## ⚙️ How to Run
 
-1. Clone the repository:
+1. Clone this repo.
+2. Install dependencies using `pip install -r requirements.txt`.
+3. Run `fake_news_detection.py`.
+4. Paste a news article to test its authenticity.
 
-   ```bash
-   git clone https://github.com/your-username/fake-news-detection.git
-   cd fake-news-detection
+## 📈 Model Performance
+
+- Accuracy: ~93%
+- High precision & recall
+
+## ✍️ Authors
+
+- [Your Name]
+- [Teammate 2]
+- [Teammate 3]
+- [Teammate 4]
+
+## 💡 Future Work
+
+- LSTM deep learning integration
+- Multilingual support
+- Real-time browser extension
